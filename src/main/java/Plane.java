@@ -30,4 +30,8 @@ public class Plane {
             this.passengers.add(passenger);
         }
     }
+
+    public void removePassenger(Passenger passenger) {
+        this.passengers.remove(passenger);
+    }
 }
