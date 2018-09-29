@@ -33,4 +33,14 @@ public class AirportTest {
     public void airportHasHangars(){
         assertEquals(1, airport.getNumberOfHangars());
     }
+
+    @Test
+    public void airportCanCreateFlights(){
+        assertEquals(0, airport.getNumberOfFlights());
+        airport.createFlight("TestFlight", "TestDestination");
+        assertEquals(1, airport.getNumberOfFlights());
+    }
+
+    @Test
+
 }

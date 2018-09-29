@@ -32,6 +32,9 @@ public class Airport {
         return this.hangars.size();
     }
 
+    public int getNumberOfFlights(){
+        return this.flights.size();
+    }
 
 
     public Plane getPlaneFromHangar(Hangar hangar, Plane plane){
