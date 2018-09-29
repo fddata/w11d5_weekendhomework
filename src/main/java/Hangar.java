@@ -21,6 +21,11 @@ public class Hangar {
         return planes;
     }
 
+    public Plane getPlane(Plane plane){
+        int targetIndex = this.planes.indexOf(plane);
+        return this.planes.get(targetIndex);
+    }
+
     public void addPlaneToHangar(Plane plane){
         this.planes.add(plane);
     }

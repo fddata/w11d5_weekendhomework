@@ -24,12 +24,33 @@ public class Airport {
         return airportCode;
     }
 
-    public void createFlight(Plane plane, String flightNumber, String destination){
-        Flight newFlight = new Flight(flightNumber, destination);
+    // get plane from a hangar
+    // create a new flight
+    // assign this plane to a flight
+
+
+    public Plane getPlaneFromHangar(Hangar hangar, Plane plane){
+       int targetHangarIndex = this.hangars.indexOf(hangar);
+        Hangar targetHangar = this.hangars.get(targetHangarIndex);
+        int targetPlaneIndex = targetHangar.getPlanes().indexOf(plane);
+        return targetHangar.getPlane(plane);
     }
 
+    public void createFlight(String flightNumber, String destination) {
+        Flight newFlight = new Flight(flightNumber, destination);
+        this.flights.add(newFlight);
+    }
 
     public void assignPlaneToFlight(Hangar hangar, Plane plane, Flight flight){
+        int flightIndex = this.flights.indexOf(flight);
+        Flight targetFlight = this.flights.get(flightIndex);
+
+        Plane targetPlane = getPlaneFromHangar(hangar, plane);
+
+        targetFlight.setPlane(targetPlane);
 
     }
+
+
+
 }
