@@ -18,11 +18,4 @@ public class Flight {
         return plane;
     }
 
-    public String getFlightNumber() {
-        return flightNumber;
-    }
-
-    public String getDestination() {
-        return destination;
-    }
 }

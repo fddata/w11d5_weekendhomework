@@ -24,6 +24,14 @@ public class Airport {
         return airportCode;
     }
 
+    public void addHangars(Hangar hangar){
+        this.hangars.add(hangar);
+    }
+
+    public int getNumberOfHangars(){
+        return this.hangars.size();
+    }
+
 
 
     public Plane getPlaneFromHangar(Hangar hangar, Plane plane){
@@ -41,9 +49,7 @@ public class Airport {
     public void assignPlaneToFlight(Hangar hangar, Plane plane, Flight flight){
         int flightIndex = this.flights.indexOf(flight);
         Flight targetFlight = this.flights.get(flightIndex);
-
         Plane targetPlane = getPlaneFromHangar(hangar, plane);
-
         targetFlight.setPlane(targetPlane);
 
     }
