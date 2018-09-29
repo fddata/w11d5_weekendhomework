@@ -24,9 +24,6 @@ public class Airport {
         return airportCode;
     }
 
-    // get plane from a hangar
-    // create a new flight
-    // assign this plane to a flight
 
 
     public Plane getPlaneFromHangar(Hangar hangar, Plane plane){

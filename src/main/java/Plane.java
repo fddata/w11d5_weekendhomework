@@ -11,4 +11,21 @@ public class Plane {
         this.airline = airline;
         this.passengers = new ArrayList<>();
     }
+
+    public PlaneType getType() {
+        return type;
+    }
+
+    public String getAirline() {
+        return airline;
+    }
+
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
+
+    public void addPassenger(Passenger passenger){
+        this.passengers.add(passenger);
+    }
 }
