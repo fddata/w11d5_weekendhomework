@@ -25,7 +25,9 @@ public class Plane {
     }
 
 
-    public void addPassenger(Passenger passenger){
-        this.passengers.add(passenger);
+    public void addPassenger(Passenger passenger) {
+        if (this.passengers.size() < this.type.getCapacity()){
+            this.passengers.add(passenger);
+        }
     }
 }

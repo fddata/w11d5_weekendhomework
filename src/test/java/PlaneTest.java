@@ -26,7 +26,10 @@ public class PlaneTest {
 
     @Test
     public void cantAddPassengersBeyondCapacity(){
-
+        plane1.addPassenger(passenger);
+        plane1.addPassenger(passenger);
+        plane1.addPassenger(passenger);
+        assertEquals(2, plane1.getPassengers().size());
     }
 
 }
