@@ -44,9 +44,10 @@ public class Airport {
         return targetHangar.getPlane(plane);
     }
 
-    public void createFlight(String flightNumber, String destination) {
+    public Flight createFlight(String flightNumber, String destination) {
         Flight newFlight = new Flight(flightNumber, destination);
         this.flights.add(newFlight);
+        return newFlight;
     }
 
     public void assignPlaneToFlight(Hangar hangar, Plane plane, Flight flight){

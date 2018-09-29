@@ -42,5 +42,10 @@ public class AirportTest {
     }
 
     @Test
+    public void airportCanAssignPlaneToFlight(){
+        Flight newFlight = airport.createFlight("TestFlight", "TestDestination");
+        airport.assignPlaneToFlight(hangar1, plane1, newFlight);
+        assertNotNull(airport.getFlights().get(0).getPlane());
+    }
 
 }
