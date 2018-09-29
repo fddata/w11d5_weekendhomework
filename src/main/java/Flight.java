@@ -4,10 +4,14 @@ public class Flight {
     private String flightNumber;
     private String destination;
 
-    public Flight(Plane plane, String flightNumber, String destination) {
+    public Flight(String flightNumber, String destination) {
         this.plane = plane;
         this.flightNumber = flightNumber;
         this.destination = destination;
+    }
+
+    public void setPlane(Plane plane) {
+        this.plane = plane;
     }
 
     public Plane getPlane() {

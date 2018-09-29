@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Hangar {
 
     private ArrayList<Plane> planes;
-    private String name
+    private String name;
 
 
     public Hangar(String name){
