@@ -30,6 +30,5 @@ public class HangarTest {
     public void canGetPlaneFromHangar(){
         hangar.addPlaneToHangar(plane1);
         assertNotNull(hangar.getPlane(plane1));
-
     }
 }

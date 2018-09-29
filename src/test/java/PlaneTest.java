@@ -22,7 +22,7 @@ public class PlaneTest {
     }
 
     @Test
-    public void cantAddPassengersBeyondCapacity(){
+    public void cannotAddPassengersBeyondCapacity(){
         plane1.addPassenger(passenger);
         plane1.addPassenger(passenger);
         plane1.addPassenger(passenger);
