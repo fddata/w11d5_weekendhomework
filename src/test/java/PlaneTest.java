@@ -11,11 +11,8 @@ public class PlaneTest {
 
     @Before
     public void before(){
-
         plane1 = new Plane(PlaneType.BIPLANE, "Red Baron Airways");
         passenger = new Passenger();
-
-
     }
 
     @Test
