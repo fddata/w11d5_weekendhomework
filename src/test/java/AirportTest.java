@@ -48,4 +48,10 @@ public class AirportTest {
         assertNotNull(airport.getFlights().get(0).getPlane());
     }
 
+    @Test
+    public void airportCanAssignTicketToPassenger(){
+        airport.assignTicketToPassenger(passenger, flight);
+        assertEquals(1, passenger.getNumberOfTickets());
+    }
+
 }

@@ -55,9 +55,9 @@ public class Airport {
         Flight targetFlight = this.flights.get(flightIndex);
         Plane targetPlane = getPlaneFromHangar(hangar, plane);
         targetFlight.setPlane(targetPlane);
-
     }
 
-
-
+    public void assignTicketToPassenger(Passenger passenger, Flight flight) {
+        passenger.buyTickets(flight);
+    }
 }
